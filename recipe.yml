@@ -1,0 +1,28 @@
+name: 'AI Site Builder Starter'
+description: 'Baseline modules and roles for AI-assisted site building.'
+type: 'Site building'
+install:
+  - node
+  - text
+  - field
+  - editor
+  - ckeditor5
+  - media
+  - image
+  - views
+  - layout_builder
+config:
+  actions:
+    user.role.ai_builder:
+      createIfNotExists:
+        id: ai_builder
+        label: 'AI Builder'
+        weight: 3
+      grantPermissions:
+        - 'access content'
+        - 'administer nodes'
+        - 'administer media'
+        - 'use text format basic_html'
+    system.site:
+      simpleConfigUpdate:
+        name: 'AI Site Builder Demo'

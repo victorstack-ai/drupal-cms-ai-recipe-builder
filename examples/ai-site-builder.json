@@ -1,0 +1,25 @@
+{
+  "name": "AI Site Builder Starter",
+  "description": "Baseline modules and roles for AI-assisted site building.",
+  "type": "Site building",
+  "modules": [
+    "node",
+    "text",
+    "field",
+    "editor",
+    "ckeditor5",
+    "media",
+    "image",
+    "views",
+    "layout_builder"
+  ],
+  "permissions": [
+    "access content",
+    "administer nodes",
+    "administer media",
+    "use text format basic_html"
+  ],
+  "role_id": "ai_builder",
+  "role_label": "AI Builder",
+  "site_name": "AI Site Builder Demo"
+}
